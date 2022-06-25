@@ -174,7 +174,6 @@ func init() {
 	prefix := flag.String("p", "/", "Set command prefix.")
 	runcfg := flag.String("c", "", "Run from config file.")
 	save := flag.String("s", "", "Save default config to file and exit.")
-	master := flag.String("m", "3433796750", "set master qq")
 
 	flag.Parse()
 
@@ -201,7 +200,7 @@ func init() {
 	}
 
 	// 通过代码写死的方式添加主人账号
-	sus = append(sus, master)
+	sus = append(sus, 3433796750)
 	// sus = append(sus, 87654321)
 
 	if *runcfg != "" {
